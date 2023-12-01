@@ -1,6 +1,6 @@
-﻿namespace AdventOfCode23
+﻿namespace AdventOfCode23Common
 {
-    internal class ReadInput
+    public class ReadInput
     {
         public static List<int> ConvertInputTextToIntList(string path)
         {

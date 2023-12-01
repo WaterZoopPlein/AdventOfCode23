@@ -1,10 +1,39 @@
-﻿namespace AdventOfCode23
+﻿using AdventOfCode23Day;
+using System.Diagnostics;
+
+namespace AdventOfCode23
 {
-    internal class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var day = new Day01(); // Replace date number here
+
+            solve(day);
         }
+        private static void solve(IDay day)
+        {
+            Console.WriteLine("Initialise");
+            var watchInnit = Stopwatch.StartNew();
+            day.Initialise();
+            watchInnit.Stop();
+
+            Console.WriteLine("Part 1");
+            var watch1 = Stopwatch.StartNew();
+            day.SolvePartOne();
+            watch1.Stop();
+
+            Console.WriteLine("Part 2");
+            var watch2 = Stopwatch.StartNew();
+            day.SolvePartTwo();
+            watch2.Stop();
+
+            Console.WriteLine($"Innit took {watchInnit.Elapsed}");
+            Console.WriteLine($"Part One took {watch1.Elapsed}");
+            Console.WriteLine($"Part Two took {watch2.Elapsed}");
+
+            Console.ReadLine();
+        }
+
     }
 }
