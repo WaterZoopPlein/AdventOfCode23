@@ -3,7 +3,7 @@ using AdventOfCode23Day;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace AdventOfCode23Tests
+namespace AdventOfCode23Test
 {
     [TestClass]
     public class TestDay01
