@@ -1,9 +1,8 @@
-﻿namespace AdventOfCode23Day
+﻿namespace AdventOfCode23Day;
+
+public interface IDay
 {
-    public interface IDay
-    {
-        void Initialise();
-        void SolvePartOne();
-        void SolvePartTwo();
-    }
+    void Initialise();
+    void SolvePartOne();
+    void SolvePartTwo();
 }
